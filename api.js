@@ -17,6 +17,12 @@ async function showAll() {
   return await db.read();
 }
 
+async function save(list) {
+  return await db.write(list);
+}
+
+
 module.exports.add = add;
+module.exports.save = save;
 module.exports.clear = clear;
 module.exports.showAll = showAll;
