@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 const api = require("./index");
-
 const { program } = require("commander");
-program
-  .option("-d, --debug", "output extra debugging")
-  .option("-s, --small", "small pizza size")
-  .option("-p, --pizza-type <type>", "flavour of pizza");
+const pkg = require("./package.json");
+
+program.version(pkg.version);
 
 program
   .command("add")
