@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const api = require("./index");
 
 const { program } = require("commander");
