@@ -14,5 +14,8 @@
   "dependencies": {
     "commander": "^8.3.0",
     "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
   }
 }
